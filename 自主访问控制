@@ -7,5 +7,7 @@
 
     授权表：主体 - 访问模式 - 客体 - 授权者
 
-    #TODO：创建一个数据库
-    #TODO：定义表结构
+    #TODO：创建一个数据库  --done
+    #TODO：定义表结构     --done
+    #TODO: 解决一个subject对一个object的一个操作请求
+    #TODO：解决
