@@ -9,5 +9,6 @@
 
     #TODO：创建一个数据库  --done
     #TODO：定义表结构     --done
-    #TODO: 解决一个subject对一个object的一个操作请求
-    #TODO：解决
+    #TODO: 图形界面
+        #TODO：安装pyqt，实验一个pyqtdemo
+        #TODO：
