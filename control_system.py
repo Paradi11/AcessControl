@@ -6,6 +6,8 @@ from controlor import isValidUser
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from PyQt4 import QtGui
+
+
 class MainWindow(QMainWindow):
     def __init__(self, user_id, is_admin, parent=None):
         super(MainWindow, self).__init__(parent)
@@ -15,9 +17,9 @@ class MainWindow(QMainWindow):
         self.central_widget = QWidget()
         self.setFixedSize(690, 400)
         self.center()
-        self.placemenu()
         database = 'ac.db'
         self.conn = sqlite.connect(database)
+        self.placemenu()
     def placemenu(self):
 
         # subject actions
@@ -74,16 +76,16 @@ class MainWindow(QMainWindow):
         if checkable:
             action.setCheckable(True)
         return action
-    #TODO:acomplish this function
     def subjectNew(self):
-        pass
+        subj_new_dlg = NewSubjectDialog(self)
+        subj_new_dlg.exec_()
+
     #TODO:acomplish this function
     def subjectManage(self):
         pass
     #TODO:acomplish this function
     def subjectChangePwd(self):
         pass
-    #TODO: do this
     def objectNew(self):
         obj_new_dlg = NewObjectDialog(self)
         obj_new_dlg.exec_()
@@ -113,6 +115,103 @@ class MainWindow(QMainWindow):
     # TODO: display one file information to file list table
     def showFile(self, name, owner, size, id):
         pass
+class NewSubjectDialog(QDialog):
+    def __init__(self,parent=None):
+        super(NewSubjectDialog, self).__init__(parent)
+        self.parent = parent
+        self.drawlayout()
+        # bind the ok button to save_subject methord
+        self.connect(self.ok_button, SIGNAL("clicked()"), self.saveSubj)
+        # bind the cancle button to cancel methord
+        self.connect(self.cancle_button, SIGNAL("clicked()"), self.reject)
+    def saveSubj(self):
+
+        def has_subject(name):
+            res = self.parent.conn.execute("select id FROM subject WHERE name = ?"(name,))
+            return (res != None)
+        name = self.input_name.text()
+        password = self.input_pwd.text()
+        veri_pwd = self.input_verif_pwd.text()
+
+        # make sure that password == veri_pwd
+        if password != veri_pwd:
+            QMessageBox.critical(self, u"添加失败", u"两次密码输入不等，请重新输入！")
+            self.input_pwd.selectAll()
+            self.input_pwd.setFocus()
+
+        elif has_subject(str(name)):
+            QMessageBox.critical(self,u"添加失败", u"用户已存在！")
+            self.input_name.selectAll()
+            self.input_name.setFocus()
+        else:
+            try:
+                self.parent.conn.execute("insert into subject values(?,?,?,?)",
+                (None, name, hashlib.md5(password).hexdigest(), False))
+            except:
+                QMessageBox.critical(self, u"添加失败", u"数据插入异常！")
+                self.reject()
+            finally:
+                QMessageBox.critical(self, u"添加成功!")
+            self.accept()
+
+    def drawlayout(self):
+        # title
+        self.setWindowTitle(u"新建主体")
+        # size
+        size = 300
+        self.setFixedSize(size,size)
+
+        # ok button
+        self.ok_button = QPushButton(u"确认")
+        # cancle button
+        self.cancle_button = QPushButton(u"取消")
+        # hbox to store ok and calcle button
+        hbox_button = QHBoxLayout()
+        hbox_button.addWidget(self.ok_button)
+        hbox_button.addWidget(self.cancle_button)
+        widget_buttons = QWidget()
+        widget_buttons.setLayout(hbox_button)
+
+        # lable :user name
+        lable_name = QLabel(u"用户名：")
+        # input user name
+        self.input_name = QLineEdit()
+        # lable :password
+        lable_pwd = QLabel(u"密码：")
+        # input passwort
+        self.input_pwd = QLineEdit()
+        self.input_pwd.setEchoMode(QLineEdit.Password)
+        # lable : verify password
+        lable_verify_pwd = QLabel(u"确认密码:")
+        # input password
+        self.input_verif_pwd = QLineEdit()
+        self.input_verif_pwd.setEchoMode(QLineEdit.Password)
+
+        hbox_name = QHBoxLayout()
+        hbox_name.addWidget(lable_name)
+        hbox_name.addWidget(self.input_name)
+        widget_name = QWidget()
+        widget_name.setLayout(hbox_name)
+
+        hbox_pwd = QHBoxLayout()
+        hbox_pwd.addWidget(lable_pwd)
+        hbox_pwd.addWidget(self.input_pwd)
+        widget_pwd = QWidget()
+        widget_pwd.setLayout(hbox_pwd)
+
+        hbox_veri = QHBoxLayout()
+        hbox_veri.addWidget(lable_verify_pwd)
+        hbox_veri.addWidget(self.input_verif_pwd)
+        widget_veri = QWidget()
+        widget_veri.setLayout(hbox_veri)
+
+        vbox = QVBoxLayout()
+        vbox.addWidget(widget_name)
+        vbox.addWidget(widget_pwd)
+        vbox.addWidget(widget_veri)
+        vbox.addWidget(widget_buttons)
+        self.setLayout(vbox)
+
 class NewObjectDialog(QDialog):
 
     def __init__(self, parent=None):
@@ -236,7 +335,6 @@ def main():
         QTimer.singleShot(0, app.quit)
     app.exec_()
 
-
 class test:
     def testMainWindow(self):
         app = QApplication(sys.argv)
@@ -250,9 +348,15 @@ class test:
         newobjectdialog = NewObjectDialog()
         newobjectdialog.exec_()
         app.exec_()
+    def testNewSubjectDialog(self):
+        app = QApplication(sys.argv)
+        new_subj_dlg = NewSubjectDialog()
+        new_subj_dlg.exec_()
+        app.exec_()
 
 if __name__ == '__main__':
     oneTest = test()
     # oneTest.testMainWindow()
-    oneTest.testmain()
+    # oneTest.testmain()
     # oneTest.testNewObjectDialog()
+    oneTest.testNewSubjectDialog()
