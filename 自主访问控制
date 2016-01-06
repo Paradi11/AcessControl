@@ -10,5 +10,9 @@
     #TODO：创建一个数据库  --done
     #TODO：定义表结构     --done
     #TODO: 图形界面
-        #TODO：安装pyqt，实验一个pyqtdemo
-        #TODO：
+        #TODO：安装pyqt，实验一个pyqtdemo --done  
+        #TODO: 画好登录页面 -- done
+        #TODO: 新建主体，并画好界面
+        #TODO：完成新建主体，并画好界面
+        #TODO：完成管理主体，并画好界面
+        #TODO:完成修改密码，并画好界面

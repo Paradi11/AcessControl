@@ -1,0 +1,14 @@
+设计
+    login：
+        - para：
+            - name：用户名称
+            - password：用户密码
+        - return：
+            - id：用户ID
+            - is_admin:是否是管理员
+
+
+    主界面:
+    参照wong2同学的界面，在操作一栏添加一个黑令牌选项
+
+
