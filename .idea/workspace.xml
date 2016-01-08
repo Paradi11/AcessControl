@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c9e2b78-2f41-44ae-a6a6-3f475df93ff7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controlor.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/control_system.py" afterPath="$PROJECT_DIR$/control_system.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/自主访问控制" afterPath="$PROJECT_DIR$/自主访问控制" />
     </list>
     <ignored path="AcessControl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,19 +59,17 @@
       <file leaf-file-name="control_system.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/control_system.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.38157895">
-              <caret line="112" column="35" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+            <state vertical-scroll-proportion="2.893401">
+              <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
               <folding>
-                <element signature="e#21#44#0" expanded="true" />
-                <element signature="e#681#2423#0" expanded="false" />
-                <element signature="e#2575#3025#0" expanded="false" />
-                <element signature="e#3060#3126#0" expanded="false" />
-                <marker date="1452071238799" expanded="true" signature="4619:4656" placeholder="select id FR... subject" />
-                <marker date="1452071238799" expanded="true" signature="5298:5333" placeholder="insert into subject... " />
-                <marker date="1452071238799" expanded="true" signature="8871:8905" placeholder="select id fr... object" />
-                <marker date="1452071238799" expanded="true" signature="9171:9211" placeholder="insert into object... " />
-                <marker date="1452071238799" expanded="true" signature="9380:9414" placeholder="select id fr... object" />
-                <marker date="1452071238799" expanded="true" signature="9568:9607" placeholder="insert into authorize... " />
+                <element signature="e#42#65#0" expanded="true" />
+                <element signature="e#2596#3046#0" expanded="false" />
+                <marker date="1452086130419" expanded="true" signature="4640:4677" placeholder="select id FR... subject" />
+                <marker date="1452086130419" expanded="true" signature="5319:5354" placeholder="insert into subject... " />
+                <marker date="1452086130419" expanded="true" signature="8892:8926" placeholder="select id fr... object" />
+                <marker date="1452086130419" expanded="true" signature="9192:9232" placeholder="insert into object... " />
+                <marker date="1452086130419" expanded="true" signature="9401:9435" placeholder="select id fr... object" />
+                <marker date="1452086130419" expanded="true" signature="9589:9628" placeholder="insert into authorize... " />
               </folding>
             </state>
           </provider>
@@ -124,6 +120,7 @@
         <option value="$PROJECT_DIR$/设计" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b58db856-be61-42e1-a7dd-b870ed21a573/console.sql" />
         <option value="$PROJECT_DIR$/自主访问控制" />
+        <option value="$PROJECT_DIR$/qttest.py" />
         <option value="$PROJECT_DIR$/control_system.py" />
       </list>
     </option>
@@ -188,16 +185,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="AcessControl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AcessControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AcessControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -473,7 +460,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452051495993</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成新建主体的操作">
+      <created>1452071568552</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1452071568552</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -501,9 +494,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.4972156" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32" sideWeight="0.4972156" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -511,14 +505,13 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.4972156" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3246154" sideWeight="0.50278443" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32565284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32615384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -537,15 +530,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="完成新建客体的操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成新建客体的操作" />
+    <MESSAGE value="完成新建主体的操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成新建主体的操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/control_system.py</url>
-          <line>201</line>
+          <line>202</line>
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -577,16 +572,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#21#44#0" expanded="true" />
-            <element signature="e#681#2423#0" expanded="false" />
-            <element signature="e#2575#3025#0" expanded="false" />
-            <element signature="e#3060#3126#0" expanded="false" />
-            <marker date="1452071238799" expanded="true" signature="4619:4656" placeholder="select id FR... subject" />
-            <marker date="1452071238799" expanded="true" signature="5298:5333" placeholder="insert into subject... " />
-            <marker date="1452071238799" expanded="true" signature="8871:8905" placeholder="select id fr... object" />
-            <marker date="1452071238799" expanded="true" signature="9171:9211" placeholder="insert into object... " />
-            <marker date="1452071238799" expanded="true" signature="9380:9414" placeholder="select id fr... object" />
-            <marker date="1452071238799" expanded="true" signature="9568:9607" placeholder="insert into authorize... " />
+            <element signature="e#42#65#0" expanded="true" />
+            <element signature="e#2596#3046#0" expanded="false" />
+            <marker date="1452086130419" expanded="true" signature="4640:4677" placeholder="select id FR... subject" />
+            <marker date="1452086130419" expanded="true" signature="5319:5354" placeholder="insert into subject... " />
+            <marker date="1452086130419" expanded="true" signature="8892:8926" placeholder="select id fr... object" />
+            <marker date="1452086130419" expanded="true" signature="9192:9232" placeholder="insert into object... " />
+            <marker date="1452086130419" expanded="true" signature="9401:9435" placeholder="select id fr... object" />
+            <marker date="1452086130419" expanded="true" signature="9589:9628" placeholder="insert into authorize... " />
           </folding>
         </state>
       </provider>
@@ -639,16 +632,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
           <folding>
-            <element signature="e#21#44#0" expanded="true" />
-            <element signature="e#681#2423#0" expanded="false" />
-            <element signature="e#2575#3025#0" expanded="false" />
-            <element signature="e#3060#3126#0" expanded="false" />
-            <marker date="1452071238799" expanded="true" signature="4619:4656" placeholder="select id FR... subject" />
-            <marker date="1452071238799" expanded="true" signature="5298:5333" placeholder="insert into subject... " />
-            <marker date="1452071238799" expanded="true" signature="8871:8905" placeholder="select id fr... object" />
-            <marker date="1452071238799" expanded="true" signature="9171:9211" placeholder="insert into object... " />
-            <marker date="1452071238799" expanded="true" signature="9380:9414" placeholder="select id fr... object" />
-            <marker date="1452071238799" expanded="true" signature="9568:9607" placeholder="insert into authorize... " />
+            <element signature="e#42#65#0" expanded="true" />
+            <element signature="e#2596#3046#0" expanded="false" />
+            <marker date="1452086130419" expanded="true" signature="4640:4677" placeholder="select id FR... subject" />
+            <marker date="1452086130419" expanded="true" signature="5319:5354" placeholder="insert into subject... " />
+            <marker date="1452086130419" expanded="true" signature="8892:8926" placeholder="select id fr... object" />
+            <marker date="1452086130419" expanded="true" signature="9192:9232" placeholder="insert into object... " />
+            <marker date="1452086130419" expanded="true" signature="9401:9435" placeholder="select id fr... object" />
+            <marker date="1452086130419" expanded="true" signature="9589:9628" placeholder="insert into authorize... " />
           </folding>
         </state>
       </provider>
@@ -803,19 +794,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/control_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.38157895">
-          <caret line="112" column="35" selection-start-line="112" selection-start-column="35" selection-end-line="112" selection-end-column="35" />
+        <state vertical-scroll-proportion="2.893401">
+          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
           <folding>
-            <element signature="e#21#44#0" expanded="true" />
-            <element signature="e#681#2423#0" expanded="false" />
-            <element signature="e#2575#3025#0" expanded="false" />
-            <element signature="e#3060#3126#0" expanded="false" />
-            <marker date="1452071238799" expanded="true" signature="4619:4656" placeholder="select id FR... subject" />
-            <marker date="1452071238799" expanded="true" signature="5298:5333" placeholder="insert into subject... " />
-            <marker date="1452071238799" expanded="true" signature="8871:8905" placeholder="select id fr... object" />
-            <marker date="1452071238799" expanded="true" signature="9171:9211" placeholder="insert into object... " />
-            <marker date="1452071238799" expanded="true" signature="9380:9414" placeholder="select id fr... object" />
-            <marker date="1452071238799" expanded="true" signature="9568:9607" placeholder="insert into authorize... " />
+            <element signature="e#42#65#0" expanded="true" />
+            <element signature="e#2596#3046#0" expanded="false" />
+            <marker date="1452086130419" expanded="true" signature="4640:4677" placeholder="select id FR... subject" />
+            <marker date="1452086130419" expanded="true" signature="5319:5354" placeholder="insert into subject... " />
+            <marker date="1452086130419" expanded="true" signature="8892:8926" placeholder="select id fr... object" />
+            <marker date="1452086130419" expanded="true" signature="9192:9232" placeholder="insert into object... " />
+            <marker date="1452086130419" expanded="true" signature="9401:9435" placeholder="select id fr... object" />
+            <marker date="1452086130419" expanded="true" signature="9589:9628" placeholder="insert into authorize... " />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,5 @@
 #-*-coding:utf-8 -*-
+#-*-coding:utf-8 -*-
 import sys, hashlib, os
 import sqlite3 as sqlite
 from datetime import datetime
@@ -59,7 +60,6 @@ class MainWindow(QMainWindow):
         self.addActions(objectMenu, (objectNewAction,objectImportAction))
         self.addActions(permMenu, (permNewAction, permManageAction))
         self.addActions(helpMenu, (aboutQtAction, aboutAction))
-
 
     def createAction(self, text, slot=None, shortcut=None, icon=None,
                      tip=None, checkable=False, signal="triggered()"):
@@ -357,6 +357,6 @@ class test:
 if __name__ == '__main__':
     oneTest = test()
     # oneTest.testMainWindow()
-    # oneTest.testmain()
+    oneTest.testmain()
     # oneTest.testNewObjectDialog()
-    oneTest.testNewSubjectDialog()
+    # oneTest.testNewSubjectDialog()
